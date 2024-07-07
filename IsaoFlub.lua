@@ -40,4 +40,17 @@ local Slider = PlayerTab:CreateSlider({
    end,
 })
 
+
+local Button = Tab:CreateButton({
+   Name = "Button Example",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+
 Rayfield:LoadConfiguration()
+
+-- destroy
+
+Rayfield:Destroy()
