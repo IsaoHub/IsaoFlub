@@ -39,3 +39,5 @@ local Slider = PlayerTab:CreateSlider({
      game.Players.LocalPlayer.Character:SetAttribute("SpeedMutiplier"), Value)
    end,
 })
+
+Rayfield:LoadConfiguration()
