@@ -45,6 +45,7 @@ local Button = Tab:CreateButton({
    Name = "Load Script",
    Callback = function()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/IsaoHub/IsaoFlub/main/IsaoFlub.lua"))()
+       print(Clicked)
    end,
 })
 
