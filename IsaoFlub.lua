@@ -41,16 +41,18 @@ local Slider = PlayerTab:CreateSlider({
 })
 
 
-local Button = Tab:CreateButton({
+local Button = PlayerTab:CreateButton({
    Name = "Load Script",
    Callback = function()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/IsaoHub/IsaoFlub/main/IsaoFlub.lua"))()
-       print(Clicked)
+       print("Clicked")
    end,
 })
 
-
-Rayfield:LoadConfiguration()
+Section:NewButton("ButtonText", "ButtonInfo", function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/IsaoHub/IsaoFlub/main/IsaoFlub.lua"))()
+    print("Clicked")
+end)
 
 -- destroy
 
