@@ -42,9 +42,9 @@ local Slider = PlayerTab:CreateSlider({
 
 
 local Button = Tab:CreateButton({
-   Name = "Button Example",
+   Name = "Load Script",
    Callback = function()
-   -- The function that takes place when the button is pressed
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/IsaoHub/IsaoFlub/main/IsaoFlub.lua"))()
    end,
 })
 
